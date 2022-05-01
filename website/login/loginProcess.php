@@ -12,6 +12,7 @@
     }
 
 function loggedin() {
+    $_SESSION['loggedin'] = "true";
     header('location: https://2-12.co.uk/~ddar/NEA-project/game/game.html');
 }
 
@@ -34,13 +35,10 @@ if ($un == "" or $_POST['pword'] == "") {
         $verified = password_verify($pw, $storedpass);
 
         if (($verified) == 1) {
-            $_SESSION['loggedin'] = "Yes";
-            //loggedin();
-            echo "logged in";
             loggedin();
 
         } else {
-            echo "incorrect";
+            echo "incorrect password";
         }
 
     } else {
