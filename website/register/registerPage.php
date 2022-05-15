@@ -12,7 +12,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-<<<<<<< Updated upstream
 
 .form {
     display: flex;
@@ -53,15 +52,6 @@ input[type=text], input[type=password] {
 
 </style>
 
-=======
-#p {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-</style>
-
->>>>>>> Stashed changes
 </head>
 
 <body>
