@@ -1,32 +1,47 @@
 <!DOCTYPE html>
-
 <html>
+
+
 
 <head>
 
-<link rel="stylesheet" href="registerCSS.css">
-
-<h1>Register</h1>
+<link rel="stylesheet" href="../websiteCSS.css"> 
 
 <style>
-    
-</style>
+ 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-<form action="registerProcess.php" method="POST">
-    <label for="uname">Enter username: </label><br>
-    <input type="text" id="uname" name="uname" ><br>
-    <label for="pword">Enter password: </label><br>
-    <input type="text" id="pword" name="pword" ><br><br>
-    <input type="submit" value="Register"><br>
-</form>
+#p {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+</style>
 
 </head>
 
 <body>
+   
+<div id="p">
+<p>
+    Already have an account? <a href="..\login\loginPage.php">Sign in</a>
+</p>
+</div>
 
-<li><a href="../login/loginPage.php">login</a></li>
-    
+<div class="form">
+    <form action="registerProcess.php" method="POST">
+        <input type="text" name="uname" placeholder="Enter Username" required><br>
+        <input type="password" name="pword" placeholder="Enter Password" required><br>
+        <input id="button" type="submit" value="Register">
+    </form>
+</div>
+
 </body>
+
+
 
 
 </html>
