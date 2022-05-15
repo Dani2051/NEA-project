@@ -4,29 +4,30 @@
 
 <head>
 
-<link rel="stylesheet" href="../websiteCSS.css">
+<link rel="stylesheet" href="homeCSS.css">
+
+<h1>Home</h1>
 
 <style>
-
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
 </style>
+
+<form action="..\login\loginPage.php" method="POST">
+    <input type="submit" value="Login"><br>
+</form>
+<form action="..\register\registerPage.php" method="POST">
+    <input type="submit" value="Register"><br>
+</form>
 
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href="..\register\registerPage.php">Register</a></li>
-      <li><a href="..\login\loginPage.php">Login</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li style="float:right"><a class="active" href="#Play">Play</a></li>
-    </ul>
-  </nav>
+    
 </body>
+
 
 </html>
