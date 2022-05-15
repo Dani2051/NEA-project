@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+label{
+    font-size: 20px;
+    width: 20px;
+    position: relative;
+    left: 0%;
+}
+
+input[type=submit]:hover {
+    background-color: #00666A;
+}
+  
+  
+input[type=submit] {
+    position: relative;
+    left: 0%;
+    background-color: #037376;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+  
+
+input[type=text], input[type=password] {
+    padding: 12px 20px;
+    margin: 0px 0;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #e8f0fe;
+}
+
+
+input[type=text], input[type=password], input[type="submit"] {
+    width: 100%;
+    border-radius: 4px;
+    position: relative;
+    left: 0%;
+}
+
+a:visited { 
+    text-decoration: none; 
+    font-size: 200px;
+    color: rgb(255, 255, 255); 
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #037376;
+}
+
+#button {
+    width: 100%;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.form {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
