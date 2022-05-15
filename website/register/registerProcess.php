@@ -17,7 +17,7 @@ $pw = password_hash($_POST['pword'], PASSWORD_DEFAULT);
 
     //check to make sure username is unique 
     if ($un == "" or $_POST['pword'] == "") {
-        header('location: https://2-12.co.uk/~ddar/HomePage.php');
+        header('location: https://2-12.co.uk/~ddar/NEA-project/website/home/homePage.php');
         $_SESSION['allFields'] = "false";
         
     } else {
