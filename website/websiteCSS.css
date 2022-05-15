@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+label{
+    font-size: 20px;
+    width: 20px;
+    position: relative;
+    left: 0%;
+}
+
+input[type=submit]:hover {
+    background-color: #00666A;
+}
+  
+  
+input[type=submit] {
+    position: relative;
+    left: 0%;
+    width: 100px;
+    background-color: #037376;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+  
+
+input[type=text], input[type=password] select {
+    width: 100%;
+    position: relative;
+    left: 0%;
+    padding: 12px 20px;
+    margin: 0px 0;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #e8f0fe;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+a:visited { 
+    text-decoration: none; 
+    font-size: 200px;
+    color: rgb(255, 255, 255); 
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #037376;
+}
+
