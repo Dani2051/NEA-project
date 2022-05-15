@@ -20,36 +20,6 @@ body {
     box-sizing: border-box;
 }
 
-input[type=text], input[type=password] {
-    width: 100%;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    position: relative;
-    left: 0%;
-    padding: 12px 20px;
-    margin: 0px 0;
-    display: inline-block;
-    border: 1px solid rgb(0, 0, 0);
-    background-color: #e8f0fe;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-
-#p {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-#button {
-    width: 100%;
-    cursor: pointer;
-    margin: 10px 0;
-}
-
 </style>
 
 </head>
@@ -69,14 +39,8 @@ input[type=text], input[type=password] {
         <input id="button" type="submit" value="Register">
     </form>
 </div>
-<<<<<<< Updated upstream
 
 </body>
 
 
-
-
-=======
-</body>
->>>>>>> Stashed changes
 </html>
