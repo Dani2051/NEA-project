@@ -1,68 +1,55 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
+    <title>Login</title>
 
-    <link rel="stylesheet" href="../websiteCSS.css">
+    <meta charset="utf-8">
 
-    <script>
+<link rel="stylesheet" href="../websiteCSS.css"> 
 
-    function processForm() {
+<style>
 
-        un = document.getElementById("uname");
-        pw = document.getElementById("pword");
+button[type=submit] {
+    width: 49.5%;
+    border-radius: 2px;
+    border-color: black;
+}
 
-        unValue = un.value;
-        pwValue = pw.value;
+#loginForm {
+    width: 40vw;
+}
 
-        if (unValue.length < 3) {
-            errorMessage = document.getElementById("message");
-            errorMessage.innerHTML = "Username too short";
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-            inputField = document.getElementById("uname");
-            inputField.style.borderColor = 'red'
-        
-        } else {
-            return true;
-        }
-    }
-
-    </script>
+</style>
 
 </head>
 
 <body>
-    <nav>
-    <ul>
-        <li><a href="..\register\registerPage.php">Register</a></li>
-        <li><a href="..\login\loginPage.php">Login</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li style="float:right"><a class="active" href="#Play">Play</a></li>
-    </ul>
-    </nav>
-
-    <h1>Login</h1>
-
-    <p> Don’t have an account? Create one <a href="..\register\registerPage.php">here.</a> </p>
-
-    <p id="message"></p>
-
-    <form onsubmit="processForm()" id="loginForm" action="loginProcess.php" method="POST">
-        <label for="uname">Enter username: </label><br>
-        <input type="text" id="uname" name="uname" ><br>
-        <label for="pword">Enter password: </label><br>
-        <input type="text" id="pword" name="pword" ><br><br>
-        <input type="submit" value="Login"><br>
-    </form>
 
 
-    <script>
-        document.getElementById("loginForm").addEventListener("submit", function(event){
-            event.preventDefault()
-        });
-    </script>
-    
+<div class="container">
+<h1>Login</h1>
+    <div id="loginForm">
+        <form action="signinProcess.php" method="POST">
+            <input type="text" name="uname" placeholder="Enter Username" required><br>
+            <input type="password" name="pword" placeholder="Enter Password" required><br>
+            
+            <div id="formButton">
+                <button type="submit">Sign in</button>
+                <button type="submit" formaction="registerProcess.php">Register</button>
+            </div>
+        </form>
+    </div>
+</div>
+
 </body>
+
 
 </html>
