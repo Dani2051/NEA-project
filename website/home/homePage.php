@@ -1,27 +1,32 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
+    <title>Home</title>
 
-<link rel="stylesheet" href="homeCSS.css">
+    <meta charset="utf-8">
 
-<h1>Home</h1>
+    <link rel="stylesheet" href="../websiteCSS.css">
 
 <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-</style>
 
-<form action="..\login\loginPage.php" method="POST">
-    <input type="submit" value="Login"><br>
-</form>
-<form action="..\register\registerPage.php" method="POST">
-    <input type="submit" value="Register"><br>
-</form>
+input[type=submit] {
+    padding: 20px;
+    width: 40vw;
+}
+
+.container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+</style>
+<div class = "container">
+    <a href="https://2-12.co.uk/~ddar/NEA-project/game/game.html"> <input type="submit" value= "Play as guest"/>  </a>
+    <a href="..\login\loginPage.php">  <input type="submit" value= "Continue with an account"/>  </a>
+</div>
 
 </head>
 
